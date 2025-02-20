@@ -2,7 +2,6 @@
 
 // practice03_test.cpp - Unit Tests for practice03.cpp using Catch2
 #include "pch.h"
-#include "CppUnitTest.h"
 #include "cpsc2376-burton-reporoot/practice/practice03/practice03.cpp"
 #include <vector>
 
