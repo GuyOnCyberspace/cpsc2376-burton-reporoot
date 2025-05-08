@@ -1,3 +1,0 @@
-circle 5
-square 4
-rectangle 3 6
