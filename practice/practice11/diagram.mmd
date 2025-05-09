@@ -1,0 +1,26 @@
+classDiagram
+    class Game {
+        +string title
+        +int totalCopies
+        +int availableCopies
+        +Game(string title, int totalCopies)
+        +void incrementAvailable()
+        +void decrementAvailable()
+    }
+
+    class Customer {
+        +string name
+        +int customerID
+        +Customer(string name, int id)
+    }
+
+    class Loan {
+        +Game* game
+        +Customer* customer
+        +string dueDate
+        +Loan(Game* game, Customer* customer, string dueDate)
+        +void returnGame()
+    }
+
+    Loan --> Game : borrows
+    Loan --> Customer : assigned to
